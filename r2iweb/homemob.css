@@ -1,0 +1,650 @@
+*{
+    margin: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+@media (min-width:320px) and (max-width:720px){
+    .navbar{
+        width: 100%;
+        height: 75px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar > .logo > img{
+        width: 100px;
+        height: 75px;
+        object-fit: cover;
+        margin-left: 15px;
+    }
+    .navbar > .fa-bars{
+        display: block;
+        font-size: 2.5rem;
+        margin-right: 30px;
+        color: rgb(68, 68, 68);
+    }
+    .navbar > .navlink{
+       display: none;
+    }
+    .navbarlink{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(150deg, rgba(206, 255, 251, 0.993), rgb(144, 182, 212));
+        display: none;
+        z-index: 999;
+    }
+    .navbarlink > .fa-times-circle{
+        position: relative;
+        font-size: 2.5rem;
+        float: right;
+        margin-right: 30px;
+        top: 3%;
+        color: rgb(39, 46, 122);
+    }
+    .navbarlink > .logotxt{
+      text-align: center;
+      color: rgb(209, 43, 43);
+      margin: 30px 0px;
+    }
+    .navbarlink > .navlist{
+       text-align: center;
+       margin: 40px 0px;
+    }
+    .navbarlink > .navlist > a{
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 600;
+       color: rgba(173, 0, 0, 0.781);
+    }
+    .navbarlink > .navlist > a:hover{
+        text-decoration: underline;
+    }
+
+    .homediv {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+      }
+      .homediv > img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+      .homediv > h1 {
+        position: relative;
+        top: 20%;
+        font-weight: 900;
+        font-size: 3rem;
+        letter-spacing: 1.1px;
+        text-align: center;
+      }
+      h1 > .r {
+        color: rgb(1, 80, 1);
+        animation: text 2s linear;
+        animation-delay: 1.5s;
+      }
+      h1 > .oo {
+        color: rgb(158, 87, 1);
+        animation: text 2s linear;
+        animation-delay: 2s;
+      }
+      h1 > .tt {
+        color: darkred;
+        animation: text 2s linear;
+        animation-delay: 2.5s;
+      }
+      h1 > .oo1 {
+        color: rgb(110, 61, 4);
+        animation: text 2s linear;
+        animation-delay: 3s;
+      }
+      h1 > .i {
+        color: navy;
+        animation: text 2s linear;
+        animation-delay: 3s;
+      }
+      h1 > .n {
+        color: olive;
+        animation: text 2s linear;
+        animation-delay: 3.5s;
+      }
+      h1 > .v {
+        color: brown;
+        animation: text 2s linear;
+        animation-delay: 3s;
+      }
+      h1 > .t {
+        color: darkgoldenrod;
+        animation: text 2s linear;
+        animation-delay: 2.5s;
+      }
+      h1 > .o {
+        color: darkgreen;
+        animation: text 2s linear;
+        animation-delay: 2s;
+      }
+      @keyframes text {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .homediv > p {
+        position: relative;
+        top: 30%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: rgb(29, 51, 3);
+        animation: text1 4s linear;
+      }
+      @keyframes text1 {
+        from {
+          left: -100%;
+          opacity: 0;
+        }
+        to {
+          left: 10%;
+          opacity: 1;
+        }
+      }
+
+      .verticals{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .verticals > h3{
+      /* position: absolute; */
+      margin-top: 15px;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      font-weight: 800;
+      color: maroon;
+      text-align: center;
+      /* left: 20%; */
+    }
+    .verticals > .verticallist{
+     
+      /* position: absolute; */
+      /* top: 8%; */
+      /* left: 10%; */
+      text-align: center;
+      width: 100%;
+      height: auto;
+      /* display: flex; */
+      /* justify-content: space-around; */
+      /* flex-wrap: wrap; */
+    }
+    .verticallist > .icon{
+      position: relative;
+      width:100%;
+      height: 60vh;
+      border-radius: 10px;
+    }
+    .verticallist > .icon:hover{
+      border: 1px solid rgb(58, 83, 6);
+      box-shadow: 3px 3px 3px #0004;
+    }
+    .icon > img{
+      /* position: absolute; */
+      /* left: 25%; */
+      /* top: 15%; */
+      margin-top: 20px;
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .icon > h4{
+      /* position: absolute; */
+      /* left: 25%; */
+      /* top: 55%; */
+      text-align: center;
+      margin: 10px 0px;
+      font-size: 1.5rem;
+      color: rgb(199, 130, 1);
+      animation: text3 10s linear;
+      cursor: pointer;
+    }
+    .icon > .btn1{
+      /* position: absolute; */
+      background-color: powderblue;
+      border: none;
+      width: 150px;
+      height: 45px;
+      text-align: center;
+      border-radius: 20px;
+      margin: 20px 0px;
+      /* top: 80%; */
+      /* left: 25%; */
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: rgb(29, 4, 44);
+    }
+    .icon > .btn1:hover{
+      border: 1px solid darkmagenta;
+    }
+    .verticals > .modal{
+      position: absolute;
+      top: 15%;
+      left: 0%;
+      width: 100%;
+      height: 110vh;
+      background-color: rgb(220, 242, 250);
+      display: none;
+    }
+    .modal > h2{
+      margin-top: 20px;
+      font-size: 2rem;
+      text-align: center;
+      color: darkolivegreen;
+    }
+    .modal > .close{
+      position: absolute;
+      top: 3%;
+      left:80%;
+      font-weight: 600;
+      font-size:2rem;
+      text-align: center;
+      color: darkred;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: white;
+    }
+    .modal > .image{
+      position: absolute;
+      top: 12%;
+      left: 0%;
+      width: 100%;
+      height: 90%;
+      /* display: flex; */
+    }
+    .image > .imgtext{
+      position: relative;
+      display: flex;
+    }
+    .image >  .imgtext > img{
+      position: relative;
+      width: 95px;
+      height: 95px;
+      object-fit: cover;
+      margin: 25px 120px;
+      border-radius: 50%;
+    }
+    .image > .imgtext > h5{
+      position: absolute;
+      top: 45%;
+      left: 0%;
+      margin-left: 60px;
+      margin-top: 70px;
+      font-size: 1.2rem;
+      color: darkolivegreen;
+    }
+    .verticals > .modal2{
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      width: 100%;
+      height: 110vh;
+      background-color: rgb(220, 242, 250);
+      display: none;
+    }
+    .modal2 > h2{
+      font-size: 2rem;
+      text-align: center;
+      color: darkolivegreen;
+      margin-top: 10px;
+    }
+    .modal2 > .close{
+      position: absolute;
+      top: 3%;
+      left:80%;
+      font-weight: 600;
+      font-size:2rem;
+      color: darkred;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: white;
+    }
+    .modal2 > .image{
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      width: 100%;
+      height: 90%;
+      text-align: center;
+    }
+    .image > h3{
+      font-size: 1.5rem;
+      letter-spacing: 2px ;
+      font-weight: 600;
+      margin-top: 10px;
+      color: darkred;
+    }
+    .image > .accservices{
+      list-style-type: none;
+    }
+    .image  > .accservices >li{
+      font-size: 1rem;
+      margin:  20px;
+    }
+    .verticals > .modal3{
+      position: absolute;
+      top: 28%;
+      left: 0%;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(220, 242, 250);
+      display: none;
+    }
+    .modal3 > h2{
+      font-size: 2rem;
+      text-align: center;
+      color: darkolivegreen;
+      margin-top: 25px;
+    }
+    .modal3 > .close{
+      position: absolute;
+      top: 3%;
+      left:80%;
+      font-size:2rem;
+      color: darkred;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-weight: 600;
+      border-radius: 50%;
+      background-color: white;
+    }
+    .modal3 > .image{
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      width: 100%;
+      height: 90%;
+    }
+    .image > .swtext {
+      position: relative;
+      display: flex;
+    }
+    .image > .swtext > img{
+      position: relative;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin: 30px 120px;
+      border-radius: 50%;
+    }
+    .image > .swtext >  h5{
+      position: absolute;
+      top: 30%;
+      margin-left: 60px;
+      margin-top: 90px;
+      font-size: 1.2rem;
+      color: darkolivegreen;
+    }
+    .verticals > .modal4{
+      position: absolute;
+      top: 58%;
+      left: 0%;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(220, 242, 250);
+      display: none;
+    }
+    .modal4 > h2{
+      font-size: 2rem;
+      text-align: center;
+      color: darkolivegreen;
+      margin-top: 25px;
+    }
+    .modal4 > .close{
+      position: absolute;
+      top: 3%;
+      left:80%;
+      font-weight: 600;
+      font-size:2rem;
+      color: darkred;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: white;
+    }
+    .modal4 > .image{
+      position: absolute;
+      top: 20%;
+      left: 0%;
+      width: 100%;
+      height: 90%;
+    }
+    .image > .tdtext{
+      position: relative;
+      display: flex
+    }
+    .image > .tdtext >  img{
+      position: relative;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin: 40px 100px;
+      border-radius: 50%;
+    }
+    .image > .tdtext >  h5{
+      position: absolute;
+      margin-top: 150px;
+      margin-left: 90px;
+      font-size: 1.2rem;
+      color: darkolivegreen;
+    }
+
+
+    section{
+        width: 100%;
+        height: auto;
+      }
+      .aboutcontent{
+        position: relative;
+        width: 100%;
+        height: 120vh;
+      }
+      .aboutcontent > img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .aboutcontent > .about_content{
+      position: absolute;
+      width: 95%;
+      height: 100vh;
+      top: 10%;
+      left: 2.5%;
+      border-radius: 10px;
+      background-color: rgba(196, 227, 248, 0.89);
+      animation: text_1 5s linear;
+      }
+      @keyframes text_1 {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+      }
+      .about_content > h4{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: maroon;
+        letter-spacing: 2px;
+        margin-top: 30px;
+        text-transform: capitalize;
+      }
+      .about_content > p{
+        text-transform: capitalize;
+        letter-spacing: 1.5px;
+        font-size: 1.5rem;
+        margin: 30px;
+        text-align: justify;
+        color: navy;
+      }
+      .about_content > .abt{
+        text-decoration: none;
+        color: navy;
+        font-size: 1.2rem;
+        font-weight: 900;
+        letter-spacing: 2px ;
+        margin: 50px;
+      }
+      .about_content > .abt > a{
+        text-decoration: underline;
+        font-style: italic;
+        color: rgb(1, 80, 1);
+      }
+      .about_content > .abt  > a:hover{
+        color: orangered;
+      }
+      /* ------------------------------------------------------------------------------------------------------------------------- */
+
+      #contact{
+        height: auto;
+        width: 100%;
+      }
+      .footer{
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: lavender;
+        /* display: flex; */
+        /* justify-content: space-around; */
+        text-align: center;
+      }
+      .footer > img{
+        margin-top: 25px;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .footer > .links{
+      margin: 13px 0px;
+      }
+      .links > .footerlink{
+        margin: 10px 0px;
+        font-size: 1.5rem;
+      }
+      .footerlink  >a{
+        color: navy;
+      text-decoration: none;
+      }
+      .footerlink  >a:hover{
+        text-decoration: underline;
+        color: rgb(6, 51, 6);
+      }
+      .links > h5, .footercontact > h5{
+        font-size: 1.7rem;
+        color: rgb(45, 63, 9);
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+      }
+      .footer > .footercontact{
+      /* width: 400px; */
+      padding: 15px;
+      }
+      .footercontact > .address{
+      display: flex;
+      margin: 15px 0px;
+      }
+      .address > .fa-map-marker{
+      font-size: 1.5rem;
+      color: navy;
+      }
+      .address > a{
+      text-decoration: none;
+      color: navy;
+      font-size: 1rem;
+      margin-left: 15px;
+      }
+      .address > a:hover{
+        text-decoration: underline;
+        color: rgb(6, 51, 6);
+      }
+      .footercontact > .call{
+        display: flex;
+        margin: 15px 0px;
+      }
+      .call > .fa-phone-square{
+        font-size: 1.5rem;
+        color: navy;
+      }
+      .call > a{
+        text-decoration: none;
+        color: navy;
+        font-size: 1rem;
+        margin-left:  10px;
+      }
+      .call > a:hover{
+        text-decoration: underline;
+        color: rgb(6, 51, 6);
+      }
+      .footercontact > .mail{
+        display: flex;
+        margin: 15px 0px;
+      }
+      .mail > .fa-envelope{
+        font-size: 1.5rem;
+        color: navy;
+      }
+      .mail > a{
+        text-decoration: none;
+      color: navy;
+      font-size: 1rem;
+      margin-left:10px;
+      }
+      .mail > a:hover{
+        text-decoration: underline;
+        color: rgb(6, 51, 6);
+      }
+      .footercontact > .insta >  a > .fa-instagram{
+      font-size: 1.8rem;
+      color: crimson;
+      } 
+      .footercontact > .insta >  a > .fa-linkedin-square{
+      font-size: 1.8rem;
+      color: blue;
+      } 
+      .footercontact > .insta >  a > .fa-youtube-play{
+      font-size: 1.8rem;
+      color: red;
+      margin: 0px 20px;
+      }
+      .iframeaddress > iframe{
+          height: 240px;
+      }
+      .copyright{
+        position: absolute;
+        top: 100%;
+        margin-top: 30px;
+        margin-left: 10px;
+        color: navy;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+}

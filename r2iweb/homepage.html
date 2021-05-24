@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roottoo innovation</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="homemob.css">
+    <link rel="stylesheet" href="hometab.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo_11.jpg" alt="">
+        </div>
+        <ul class="navlink">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://roottooinnovation.blogspot.com/">Blog</a></li>
+            <li><a href="https://roottoojobs.blogspot.com/2021/04/react-native-with-andriod-sr-software.html">Jobs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa fa-bars" aria-hidden="true" onclick="opennavlink()"></i>
+    </div>
+    <div class="navbarlink" id="navigation">
+        <i class="fa fa-times-circle" aria-hidden="true" onclick="closenavlink()"></i>
+        <div class="logotxt">
+            <h1>ROOTTOO</h1>
+            <h1>innovation</h1>
+        </div>
+        <div class="navlist"><a href="homepage.html">Home</a></div>
+        <div class="navlist"><a href="#about">About Us</a></div>
+        <div class="navlist"><a href="https://roottooinnovation.blogspot.com/">Blog</a></div>
+        <div class="navlist"><a href="https://roottoojobs.blogspot.com/2021/04/react-native-with-andriod-sr-software.html">Jobs</a></div>
+        <div class="navlist"><a href="#contact">Contact</a></div>
+    </div>
+
+    <div class="homediv">
+        <img src="images/backgroundimg1.jpeg" alt="">
+        <h1 id="h1"><span class="r">R</span><span class="oo">OO</span><span class="tt">TT</span><span class="oo1">OO</span> 
+        <span class="i">IN</span><span class="n">NO</span><span class="v">VA</span><span class="t">TI</span><span class="o">ON</span></h1>
+        <p>We Care Your Request</p>
+    </div>
+
+    <div class="verticals">
+        <h3>Verticals</h3>
+        <div class="verticallist">
+            <div class="icon">
+                <img src="images/staffimg.png" alt="">
+                <h4 >Staffing</h4>
+                <button type="button" onclick="staffingfn()" class="btn1">know more</button>
+            </div>
+            <div class="icon">
+                <img src="https://icon-library.com/images/auditor-icon/auditor-icon-10.jpg" alt="">
+                <h4>Auditing</h4>
+                <button type="button"  onclick="auditfn()" class="btn1">know more</button>
+            </div>
+            <div class="icon">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqUVQrorTQ-bwPHMrCLlHrmmRCY9tL6a99tA&usqp=CAU" alt="">
+                <h4>Software Development</h4>
+                <button type="button"  onclick="swfn()" class="btn1">know more</button>
+            </div>
+            <div class="icon">
+                <img src="images/traingdevicon.png" alt="">
+                <h4>Training & Development</h4>
+                <button type="button"  onclick="trainingdevfn()" class="btn1"> know more</button>
+            </div>
+        </div>
+        <div class="modal" id="modalbox">
+            <h2>Staffing</h2>
+            <span class="close" id="close"onclick="closefn()">
+                X
+            </span>
+            <div class="image" id="modalstaffng">
+                <div class="imgtext">
+                    <img src="images/perstaffing.png" alt="">
+                <h5>Permanent Staffing</h5>
+                </div>
+                <div class="imgtext">
+                    <img src="images/tempstaffing.jpg" alt="">
+                <h5>Temparary Staffing</h5>
+                </div>
+                <div class="imgtext">
+                    <img src="images/contractstaffing.png" alt="">
+                    <h5>Contract Staffing</h5>
+                </div>
+            </div>
+        </div>
+        <div class="modal2" id="modalbox1">
+            <h2>Auditing</h2>
+            <span class="close" id="close" onclick="closefn1()">
+                X
+            </span>
+            <div class="image" id="modalaudit">
+                <h3>List of Accounting Services</h3>
+                <ul class="accservices">
+                    <li>General Accounting</li>
+                    <li>Book Kepping</li>
+                    <li>Day to Day Entries in Tally</li>
+                    <li>GST Registration & Filing</li>
+                    <li>MSME Certification</li>
+                    <li>Shop & Establishment License</li>
+                    <li>Food License</li>
+                    <li>Income Tax Returns Filing</li>
+                    <li>Tax audit</li>
+                    <li>Company Registration & Annual Filing</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal3" id="modalbox2">
+            <h2>Software Development</h2>
+            <span class="close" id="close"onclick="closefn2()">
+                X
+            </span>
+            <div class="image" id="modalsw">
+                <div class="swtext">
+                    <img src="images/webdev.jpg" alt="">
+                    <h5>Web Development</h5>
+                </div>
+                <div class="swtext">
+                    <img src="images/appdev.jpg" alt="">
+                    <h5>App Development</h5>
+                </div>
+            </div>
+        </div>
+        <div class="modal4" id="modalbox3">
+            <h2>Training & Development</h2>
+            <span class="close" id="close"onclick="closefn3()">
+                X
+            </span>
+            <div class="image" id="modalt-dev">
+               <div class="tdtext">
+                <img src="images/networkicon.jpg" alt="">
+                <h5>Networking</h5>
+               </div>
+               <div class="tdtext">
+                <img src="images/vlsiicon.png" alt="">
+                <h5>VLSI</h5>
+               </div>
+            </div>
+        </div>    
+    </div>
+
+    <section id="about">
+        <div class="aboutcontent">
+            <img src="images/bgimage3.jpg" alt="">
+            <div class="about_content">
+                <h4>About us</h4>
+                <p>rootto innovation is <b>staffing company</b>.<br>
+                    roottoo innovation comes into a play to bring the best suited talent for your company.
+                </p>
+                <p class="abt">to know more about us, <a href="about.html">click here</a></p>
+            </div>
+        </div>
+          </section>
+
+          <section id="contact">
+            <footer class="footer">
+                <img src="images/logo_11.jpg" alt="">
+                <div class="links">
+                    <h5>Link</h5>
+                    <div class="footerlink"><a href="home.html">Home</a></div>
+                    <div class="footerlink"><a href="about.html">About</a></div>
+                    <div class="footerlink"><a href="https://roottooinnovation.blogspot.com/">Blog</a></div>
+                    <div class="footerlink"><a href="https://roottoojobs.blogspot.com/2021/04/react-native-with-andriod-sr-software.html">Jobs</a></div>
+                </div>
+                <div class="footercontact">
+                    <h5>Contact us</h5>
+                    <div class="address">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <a href="
+                        https://goo.gl/maps/ZAHn5KEwfFfpiW1o9
+                        ">behind Karnataka bank road,<br>Hurulichikanahalli, Bengaluru, <br>Karnataka 560088</a>
+                    </div>
+                    <div class="call">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <a href="tel:+91 8147394287">+91 8147394287</a>
+                    </div>
+                    <div class="mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:roottoo.innovation@outlook.com">roottoo.innovation@outlook.com</a>
+                    </div>
+                    <div class="insta">
+                        <a href="https://www.instagram.com/roottooinnovation/"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/watch?v=SmPweo3jQEI"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <a href="https://in.linkedin.com/company/roottoo-innovation"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="iframeaddress">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15542.440270588864!2d77.47301967782975!3d13.123870852096589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d13.131714599999999!2d77.47898699999999!4m5!1s0x3bae234f17c04705%3A0x8306a37b78a1ca14!2sroottoo%20innovation!3m2!1d13.1167707!2d77.4826961!5e0!3m2!1sen!2sin!4v1618769772145!5m2!1sen!2sin" width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="copyright">
+                    <p><span><i class="fa fa-copyright" aria-hidden="true"></i></span>2021-Roottoo Innovation All rights reserved</p>
+                </div>
+            </footer>
+        </section>
+    <script src="home.js"></script>
+</body>
+</html>
